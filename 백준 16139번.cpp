@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include<map>
+
 using namespace std;
 
 int main() {
@@ -12,7 +12,6 @@ int main() {
 	vector<int>result;
 	v[S[0] - 'a'][0]++;
 	for (int i = 1;i < S.length();i++) {
-		
 		for (int j = 0;j < 26;j++) {
 			if (v[j][i - 1] > 0) {
 				v[j][i] = v[j][i - 1];
@@ -33,4 +32,5 @@ int main() {
 	for (int i = 0;i < q;i++) {
 		cout << result[i]<<'\n';
 	}
+
 }
